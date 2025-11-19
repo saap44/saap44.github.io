@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  list-style: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+#logo2 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo2 img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Affichage non zoomé */
+  display: block;
+}
+
+#lien_artiste {
+  width: 100%;
+  text-align: end;
+  position: absolute;
+  top: 31%;
+  right: 5px;
+  font-family: monospace;
+}
+
+#p_artiste {
+  color: #030302;
+  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+#h1_nom_site {
+  color: #ff4400;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 3%;
+}
+
+.h2_soustitre {
+  color: #000000;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  text-align: center;
+  font-size: 30px;
+  margin: 0%;
+  padding-left: 0;
+}
+
+.h2_soustitre a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.h2_soustitre a:hover {
+  color: #ff4400;
+  transition: color 0.3s ease-in-out;
+}
+
+#date_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#date_container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flyer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.flyer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 60%;
+  margin-left: 5%;
+  margin-bottom: 7%;
+}
+
+.position {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding-top: 70.7143%;
+  padding-bottom: 0;
+  box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+  margin-top: 1.6em;
+  margin-bottom: 0.9em;
+  overflow: hidden;
+  border-radius: 8px;
+  will-change: transform;
+}
+
+/* Responsive du main */
+@media (max-width: 750px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #h1_nom_site {
+    font-size: 20px;
+    margin-top: 3%;
+  }
+  #h2_soustitre {
+    font-size: 15px;
+    margin-top: 5%;
+    margin-bottom: 0;
+    padding-left: 5%;
+  }
+  #date_container {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px;
+  }
+  #flyer1 {
+    width: 90%;
+    margin-left: 0;
+  }
+}

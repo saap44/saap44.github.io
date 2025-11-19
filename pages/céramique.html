@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css_par_section/typography.css">
+    <link rel="stylesheet" href="../css/style_catalogue.css">
+    <link rel="stylesheet" href="../css/css_par_section/footer.css">
+    <link rel="stylesheet" href="../css/css_par_section/menu_burger.css">
+    <link rel="stylesheet" href="../css/css_par_section/ficher_produit.css">
+    <link rel="stylesheet" href="../css/css_par_section/catalogues_card.css">
+    <link rel="stylesheet" href="../css_btn_voir_plus.css">
+    <link rel="stylesheet" href="../css/css_par_section/css_btn_up.css">
+    <link rel="stylesheet" href="../css/css_par_section/css.btn_retour_catalogue.css">
+    <link rel="icon" href="../images/logos/2.png" type="image/png">
+    <style>
+    .hidden {
+    display: none;
+    }
+    .button_produit {
+    position: relative;
+    margin: 30px auto;
+    display: block;
+    background-color: #ff4400;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    overflow: hidden;
+    }
+
+    .button_produit .text {
+    display: inline-block;
+    transition: opacity 0.3s ease;
+    }
+
+
+    </style>
+    <title>Céramique</title>
+</head>
+<body>
+      <header>
+            <h1 id="apropos">Céramique</h1>
+            <div id="logo2">
+                <img src="../images/image_categories/image-ceramique.webp" alt="">
+            </div>
+             <nav>
+                <div class="links" style="--items: 4">
+                    <a href="../index.html">Accueil</a>
+                    <a href="apropos.html">A propos</a>
+                    <a href="les_artisans.html">Les artisans</a>
+                    <a href="contact.html">Contact</a>
+                    <div class="line"></div>
+                </div>
+            </nav>
+    </header>   
+    <main>
+       
+        </div>
+        <div id="main_container">
+            <aside>
+                        <div>
+                <h2>les categories</h2>
+                <ul>
+                    <li><a href="Bois-d'olivier.html" id=as-ul-li-a-bois-d-olivier>Bois d'olivier</a></li>
+                    <li><a href="céramique.html" id=as-ul-li-a-ceramic>Céramique</a></li>
+                    <li><a href="verre-soufflé.html" id=as-ul-li-a-boules-de-noel>Verre soufflé</a></li>
+                    <li><a href="textile.html" id=as-ul-li-a-textil>Broderies</a></li>
+                </ul>
+            </div>
+            </aside>
+            <section id="productSection">
+                <h1>Nos produits en céramique</h1>
+                <div id="productContainer">
+                    <div id="productPopup" class="popup">
+                        <div class="popup-content">
+                            <span class="close-btn">&times;</span>
+                            <h2 id="popupTitle">Nom du produit</h2>
+                            <img id="popupImage" src="" alt="Produit" class="product-img">
+                            <p><strong>Prix :</strong> <span id="popupPrice"></span></p>
+                            <p><strong>Dimentions :</strong> <span id="popupDimensions"></span></p>
+                            <p><strong>Référence :</strong> <span id="popupReferences"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-name="Plateau rectangle - Elégance ottomane" data-price="50,00€" data-image="../images/images produits/Ceramic/Image2.jpg" data-references="CER 2"  data-dimensions="(L) 51 x (l) 32 x (H) 2,60 cm"> <h3>Plateau rectangle - Elégance ottomane</h3> <img src="../images/images produits/Ceramic/Image2.jpg" alt="Carreaux de céramique dans un plateau en bois" class="product-img"> <span> Prix: 50,00€</span> <button type="button" class="button openPopupBtn" id="button"> <span class="button__text">voir plus</span> <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span> </button> 
+                    </div>
+                    <div class="product-card"
+                        data-name="Plateau carré - fleurs multicolores"
+                        data-price="30,00€"  data-reference="CER 3"
+                        data-image="../images/images produits/Ceramic/Carreaux de céramique dans un plateau en bois2.jpg" data-dimensions="(L) 26 x (l) 22 x (H) 2,60 cm">
+                        <h3>Plateau carré - fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Carreaux de céramique dans un plateau en bois2.jpg" alt="Carreaux de céramique dans un plateau en bois" class="product-img">
+                        <span> Prix: 30,00 €</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div> 
+                    <div class="product-card"
+                        data-name="Plateau carré - Jardin géométrique"
+                        data-price="45,00€" data-references="CER 4"
+                        data-image="../images/images produits/Ceramic/Carreaux de céramique dans un plateau en bois3.jpg" data-dimensions="(L) 36 x (l) 32 x (H) 2,60 cm">
+                        <h3>Plateau carré - Jardin géométrique</h3>
+                        <img src="../images/images produits/Ceramic/Carreaux de céramique dans un plateau en bois3.jpg" alt="Carreaux de céramique dans un plateau en bois" class="product-img">
+                        <span> Prix: 45,00 €</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div> 
+                    <div class="product-card"
+                        data-name="Carreau 20 cm - Fleurs ottomanes"
+                        data-price="18,00€"
+                        data-image="../images/images produits/Ceramic/Carrelage en céramique.jpg"
+                        data-dimensions="(L) 20 x (L) 20 x (H) 0,70 cm" data-references="CER 37">
+                        <h3>Carreau 20 cm - Fleurs ottomanes </h3>
+                        <img src="../images/images produits/Ceramic/Carrelage en céramique.jpg" alt="Carrelage en céramique" class="product-img">
+                        <span> Prix:18,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Carreau 15 cm - Village"
+                        data-price="14,00€"
+                        data-image="../images/images produits/Ceramic/Carrelage en céramique2.jpg"
+                        data-dimensions="(L) 15 x (L) 15 x (H) 0,50 cm" data-references="CER 38">
+                        <h3>Carreau 15 cm - Village</h3>
+                        <img src="../images/images produits/Ceramic/Carrelage en céramique2.jpg" alt="Dessous de plat - Jardin géométrique " class="product-img">
+                        <span> Prix:14,00 €</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Dessous de plat - Jardin géométrique "
+                        data-price="22,00€"
+                        data-image="../images/images produits/Ceramic/Dessous de verre en céramique – Bois d'olivier.jpg"
+                        data-dimensions="(L) 19,5 x (L) 19,5 x (H) 1 cm" data-references="36">
+                        <h3>Dessous de plat - Jardin géométrique </h3>
+                        <img src="../images/images produits/Ceramic/Dessous de verre en céramique – Bois d'olivier.jpg" alt="Dessous de plat - Jardin géométrique " class="product-img">
+                        <span> Prix: 22,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Plat à pizza 30 cm - Fleurs multicolores"
+                        data-price="28,00€"
+                        data-image="../images/images produits/Ceramic/Assiette à Pizza Plate en Céramique.jpg"
+                        data-dimensions="(P) 30 x (H) 1,8 cm" data-references="CER 32">
+                        <h3>Plat à pizza 30 cm - Fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Assiette à Pizza Plate en Céramique.jpg" alt="Assiette à Pizza Plate en Céramique " class="product-img">
+                        <span> Prix: 28,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Plat à pizza 30 cm - Arbre et oiseaux"
+                        data-price="28,00€"
+                        data-image="../images/images produits/Ceramic/Assiette à Pizza Plate en Céramique2.jpg"
+                        data-dimensions="(P) 30 x (H) 1,8 cm" data-references="CER 33">
+                        <h3>Plat à pizza 30 cm - Arbre et oiseaux</h3>
+                        <img src="../images/images produits/Ceramic/Assiette à Pizza Plate en Céramique2.jpg" alt="Assiette à Pizza Plate en Céramique " class="product-img">
+                        <span> Prix: 28,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div  class="product-card"
+                        data-name="Plat à pizza 30 cm - Elégance ottomane"
+                        data-price="28,00€"
+                        data-image="../images/images produits/Ceramic/Assiette à Pizza Plate en Céramique3.png"
+                        data-dimensions="(P) 30 x (H) 1,8 cm" data-references="CER 34">
+                        <h3>Plat à pizza 30 cm - Elégance ottomane</h3>
+                        <img src="../images/images produits/Ceramic/Assiette à Pizza Plate en Céramique3.png" alt="Assiette à Pizza Plate en Céramique " class="product-img">
+                        <span> Prix: 28,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Plat à pizza 30 cm - Lauriers et fleurs multicolores"
+                        data-price="28,00€"
+                        data-image="../images/images produits/Ceramic/Assiette à Pizza Plate en Céramique4.jpg"
+                        data-dimensions="(P) 30 x (H) 1,8 cm" data-references="CER 35">
+                        <h3>Plat à pizza 30 cm - Lauriers et fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Assiette à Pizza Plate en Céramique4.jpg" alt="Assiette à Pizza Plate en Céramique " class="product-img">
+                        <span> Prix: 28,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Petit bol 9 cm - Couleur olives"
+                        data-price=" 8,00€"
+                        data-image="../images/images produits/Ceramic/Bol à céréales et à soupe en céramique.jpg"
+                        data-dimensions="(P) 9 X (H) 4 X (L) 4 cm" data-references="CER 41">
+                        <h3>Petit bol 9 cm - Couleur olives</h3>
+                        <img src="../images/images produits/Ceramic/Bol à céréales et à soupe en céramique.jpg" alt="Plat rond en céramique " class="product-img">
+                        <span> Prix: 8,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Petit bol 12 cm - Fleurs multicolores"
+                        data-price=" 12,00€"
+                        data-image="../images/images produits/Ceramic/Bol à céréales et à soupe en céramique2.jpg"
+                        data-dimensions="(P) 12 X (H) 5 X (L) 5,5 cm" data-references="CER 42">
+                        <h3>Petit bol 12 cm - Fleurs multicolores </h3>
+                        <img src="../images/images produits/Ceramic/Bol à céréales et à soupe en céramique2.jpg" alt="Plat rond en céramique " class="product-img">
+                        <span> Prix: 12,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Coupelle 15 cm - Lotus"
+                        data-price="15,00€"
+                        data-image="../images/images produits/Ceramic/Bol à céréales et à soupe en céramique3.jpg"
+                        data-dimensions="(P) 15 X (H) 6 X (L) 7 cm" data-references="CER 45">
+                        <h3>Coupelle 15 cm - Lotus</h3>
+                        <img src="../images/images produits/Ceramic/Bol à céréales et à soupe en céramique3.jpg" alt="Plat rond en céramique " class="product-img">
+                        <span> Prix: 15,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Bol profond en céramique"
+                        data-price="18,00€"
+                        data-image="../images/images produits/Ceramic/Bol profond en céramique.jpg"
+                        data-dimensions="(L) 19,5 x (l) 19,5 x (H) 5,5 cm" data-references="CER 47">
+                        <h3>Bol profond en céramique</h3>
+                        <img src="../images/images produits/Ceramic/Bol profond en céramique.jpg" alt="Bol profond en céramique " class="product-img">
+                        <span> Prix: 18,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Coupelle 19,5 cm - Citrons"
+                        data-price="18,00€"
+                        data-image="../images/images produits/Ceramic/Bol profond en céramique2.jpg"
+                        data-dimensions="(P) 19,5 X (H) 5,5 X (L) 9 cm" data-references="CER 48">
+                        <h3>Coupelle 19,5 cm - Citrons</h3>
+                        <img src="../images/images produits/Ceramic/Bol profond en céramique2.jpg" alt="Bol profond en céramique " class="product-img">
+                        <span> Prix: 18,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Coupelle 15 cm - Village "
+                        data-price="15,00€"
+                        data-image="../images/images produits/Ceramic/Bol rond en céramique.jpg"
+                        data-dimensions=" (P) 15 x (H) 4 x (L) 10,5 cm " data-references="CER 44">
+                        <h3>Coupelle 15 cm - Village </h3>
+                        <img src="../images/images produits/Ceramic/Bol rond en céramique.jpg" alt="Bol rond en céramique" class="product-img">
+                        <span> Prix: 15,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card "
+                        data-name="Bol 18 cm - Bleu et blanc "
+                        data-price="16,00€ "
+                        data-image="../images/images produits/Ceramic/Plat rond en céramique5.jpg"
+                        data-dimensions="plusieurs tailles sont disponibles" data-references="CER 49">
+                        <h3>Bol 18 cm - Bleu et blanc </h3>
+                        <img src="../images/images produits/Ceramic/Plat rond en céramique5.jpg" alt="Assiette à Pizza Plate en Céramique " class="product-img">
+                        <span> Prix: 16,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div> 
+                    <div class="product-card"
+                        data-name="Plat ovale creux 30,5 cm - Fleurs de papyrus"
+                        data-price="45,00€"
+                        data-image="../images/images produits/Ceramic/Plat à tarte ovale en céramique.jpg"
+                        data-dimensions=" (L) 30,5 x (l) 20 x (H) 5,5 x (l) 25,5 x 15,5 cm" data-references="CER 21">
+                        <h3>Plat ovale creux 30,5 cm - Fleurs de papyrus</h3>
+                        <img src="../images/images produits/Ceramic/Plat à tarte ovale en céramique.jpg" alt="Plat à tarte ovale en céramique" class="product-img">
+                        <span> Prix:45,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Plat ovale en céramique"
+                    data-price="20,00€"
+                        data-image="../images/images produits/Ceramic/Plat ovale en céramique 2.jpg"
+                        data-dimensions=" (L) 20,5 x (l) 11,5 x (H) 3 x (l) 15×8 cm" data-references="CER 52">
+                        <h3>Plat ovale en céramique</h3>
+                        <img src="../images/images produits/Ceramic/Plat ovale en céramique 2.jpg" alt="Plat à tarte ovale en céramique" class="product-img">
+                        <span> Prix:20,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Plat ovale en céramique"
+                        data-price="20,00€"
+                        data-image="../images/images produits/Ceramic/Plat ovale en céramique.jpg"
+                        data-dimensions=" (L) 23 x (l) 16,5 x (H) 4,5 x (l) 13 x 8 cm" data-references="CER 20">
+                        <h3>Plat ovale en céramique</h3>
+                        <img src="../images/images produits/Ceramic/Plat ovale en céramique.jpg" alt="Plat ovale en céramique" class="product-img">
+                        <span> Prix:20,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Coupelle 13 cm - Fleurs bleues"
+                        data-price="13,00€"
+                        data-image="../images/images produits/Ceramic/Plat ovale en céramique3.jpg"
+                        data-dimensions="(L) 14 x (l) 10 x (H) 1,5 cm" data-references="CER 51">
+                        <h3>Coupelle 13 cm - Fleurs bleues</h3>
+                        <img src="../images/images produits/Ceramic/Plat ovale en céramique3.jpg" alt="Coupelle 13 cm - Fleurs bleues" class="product-img">
+                        <span> Prix:13,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="plat ovale plat 40 cm - Fleurs multicolores"
+                        data-price="50,00€"
+                        data-image="../images/images produits/Ceramic/Plat ovale en céramique4.jpg"
+                        data-dimensions="(L) 40 x (l) 27 x (H) 5 x (l) 26×15 cm" data-references="CER 26">
+                        <h3>plat ovale plat 40 cm - Fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Plat ovale en céramique4.jpg" alt="plat ovale plat 40 cm - Fleurs multicolores" class="product-img">
+                        <span> Prix:50,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="pla rond creux 28 - village  "
+                        data-price="35,00€"
+                        data-image="../images/images produits/Ceramic/Plat rond en céramique 4.jpg"
+                        data-dimensions="(P) 28 x (H) 6 x (L) 21 cm" data-references="CER 29">
+                        <h3>pla rond creux 28 - village  </h3>
+                        <img src="../images/images produits/Ceramic/Plat rond en céramique 4.jpg" alt="pla rond creux 28 - village  " class="product-img">
+                        <span> Prix:35,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="plat rond creux 35 cm - village "
+                        data-price="45,00€"
+                        data-image="../images/images produits/Ceramic/Plat rond en céramique 2.jpg"
+                        data-dimensions="(P) 35 x (H)6,5x(L) 25 cm" data-references="CER 28">
+                        <h3>plat rond creux 35 cm - village </h3>
+                        <img src="../images/images produits/Ceramic/Plat rond en céramique 2.jpg" alt="plat rond creux 35 cm - village " class="product-img">
+                        <span> Prix:45,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    
+                    <!-- modele des porduits cacher -->
+                    <div class="product-card hidden plusProduits"
+                        data-name="Plat rond en céramique"
+                        data-price="$2,80"
+                        data-image="../images/images produits/Ceramic/Plat rond en céramique.jpg"
+                        data-dimensions="(P) 13 X (H) 2 X (L) 10 cm">
+                        <h3>Plat rond en céramique </h3>
+                        <img src="../images/images produits/Ceramic/Plat rond en céramique.jpg" alt="Plat rond en céramique " class="product-img">
+                        <span> Prix:$2,80</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden plusProduits"
+                        data-name="Plat rectangulaire en céramique"
+                        data-price=" $10,80"
+                        data-image="../images/images produits/Ceramic/Plat rectangulaire gastronorme en céramique.jpg"
+                        data-dimensions="(L) 31,5 X (l) 13,5 X (H) 3,5 X (l) 29×11,5 cm">
+                        <h3>Plat rectangulaire en céramique</h3>
+                        <img src="../images/images produits/Ceramic/Plat rectangulaire gastronorme en céramique.jpg" alt="Assiette à Pizza Plate en Céramique " class="product-img">
+                        <span> Prix:$10,80</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden plusProduits"
+                        data-name="Petit plat rectangle 20,5 cm -  Fleurs multicolores"
+                        data-price=" 20,00€"
+                        data-image="../images/images produits/Ceramic/Plat rectangulaire en céramique.jpg"
+                        data-dimensions="(L) 20,5 X (l) 11 X (H) 2,8 X (l) 17,5×8 cm" data-references="CER 53">
+                        <h3>Petit plat rectangle 20,5 cm -  Fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Plat rectangulaire en céramique.jpg" alt="petit plat rectangle 20,5 cm -  Fleurs multicolores" class="product-img">
+                        <span> Prix:20,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden plusProduits"
+                        data-name="Plat en céramique"
+                        data-price="$15.20"
+                        data-image="../images/images produits/Ceramic/Plateau de banquet parfait en céramique.jpg"
+                        data-dimensions="(P) 35 X (H) 7 X (L) 19,5 cm">
+                        <h3>Plat en céramique</h3>
+                        <img src="../images/images produits/Ceramic/Plateau de banquet parfait en céramique.jpg" alt="Assiette à Pizza Plate en Céramique " class="product-img">
+                        <span> Prix:$15.20</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="plat rond creux 33 cm - village "
+                        data-price="45.00€"
+                        data-image="../images/images produits/Ceramic/Coupe à fruits en céramique.jpg"
+                        data-dimensions="(P) 33 X (H) 6,5 X (L) 13 cm" data-references="CER 25">
+                        <h3>plat rond creux 33 cm - village </h3>
+                        <img src="../images/images produits/Ceramic/Coupe à fruits en céramique.jpg" alt="Coupe à fruits en céramique" class="product-img">
+                        <span> Prix:45.00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Plat rond creux 35 cm - Etoile bleue"
+                        data-price="45.00€"
+                        data-image="../images/images produits/Ceramic/Saladier en céramique.jpg"
+                        data-dimensions="(P) 35 X (H) 13 X (L) 13,5 cm" data-references="CER 27">
+                        <h3>Plat rond creux 35 cm - Etoile bleue</h3>
+                        <img src="../images/images produits/Ceramic/Saladier en céramique.jpg" alt="Saladier en céramique" class="product-img">
+                        <span> Prix:45.00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Mug 13 cm - Elégance ottomane"
+                        data-price="15,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique Cheers.jpg"
+                        data-dimensions="(L) 12,5 X (l) 8,5 X (H) 13 X (l) 8,5 cm" data-references="CER 5">
+                        <h3>Mug 13 cm - Elégance ottomane</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique Cheers.jpg" alt="Tasse en céramique " class="product-img">
+                        <span> Prix:15,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="mug en céramique 10 cm - Elégance ottomane"
+                        data-price="12,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique11.jpg"
+                        data-dimensions="(L) 12 X (l) 8,5 X (H) 10 cm" data-references="CER 13">
+                        <h3>Mug 10 cm - Elégance ottomane</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique11.jpg" alt="Tasse en céramique Cheers" class="product-img">
+                        <span> Prix:12,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="mug en céramique 7 cm - Fleurs multicolores"
+                        data-price="10,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique10.jpg"
+                        data-dimensions="(L) 11 X (l) 8 X (H) 8 cm" data-references="CER 16">
+                        <h3>Mug 7 cm - Fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique10.jpg" alt="Tasse en céramique Cheers" class="product-img">
+                        <span> Prix:10,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="mug en céramique 10 cm - Fleurs multicolores"
+                        data-price="12,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique9.jpg"
+                        data-dimensions="(L) 12 X (l) 8,5 X (H) 10 cm" data-references="CER 14">
+                        <h3>Mug 10 cm - Fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique9.jpg" alt="Tasse en céramique Cheers" class="product-img">
+                        <span> Prix:12,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Mug 7 cm - Fleurs multicolores"
+                        data-price="10,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique8.jpg"
+                        data-dimensions="(L) 9 X (l) 6 X (H) 7 cm" data-references="CER 17">
+                        <h3>Mug 7 cm - Fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique8.jpg" alt="Tasse en céramique Cheers" class="product-img">
+                        <span> Prix:10,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Mug 7 cm - Fleurs multicolores"
+                        data-price="10,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique7.jpg"
+                        data-dimensions="(L) 9 X (l) 6 X (H) 7 cm" data-references="CER 16">
+                        <h3>Mug 7 cm - Fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique7.jpg" alt="Tasse en céramique Cheers" class="product-img">
+                        <span> Prix:10,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Mug 10 cm - Fleurs sur fond jaune"
+                        data-price="12,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique6.jpg"
+                        data-dimensions="(L) 12 X (l) 8,5 X (H) 10 cm" data-references="CER 12">
+                        <h3>Mug 10 cm - Fleurs sur fond jaune</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique6.jpg" alt="Tasse en céramique Cheers" class="product-img">
+                        <span> Prix:12,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Mug 10 cm - lotus"
+                        data-price="12,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique5.jpg"
+                        data-dimensions="(L) 12 X (l) 8,5 X (H) 10 cm" data-references="CER 11">
+                        <h3>Mug 10 cm - lotus</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique5.jpg" alt="Tasse en céramique Cheers" class="product-img">
+                        <span> Prix:12,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="mug 10 cm - roses et iris "
+                        data-price="12,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique.jpg"
+                        data-dimensions="(L) 12 X (l) 8,5 X (H) 10 cm" data-references="CER 7">
+                        <h3>Mug 10 cm - roses et iris</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique.jpg" alt="Tasse en céramique Cheers" class="product-img">
+                        <span> Prix:12,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Mug 10 cm - bleue et turquoise"
+                        data-price="10,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique4.jpg"
+                        data-dimensions="(L) 12 X (l) 8,5 X (H) 10 cm" data-references="CER 10">
+                        <h3>Mug 10 cm - bleue et turquoise</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique4.jpg" alt="Tasse en céramique" class="product-img">
+                        <span> Prix:10,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Mug 10 cm - fleurs multicolores et turquoise "
+                        data-price="12,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique3.jpg"
+                        data-dimensions="(L) 12 X (l) 8,5 X (H) 10 cm" data-references="CER 9">
+                        <h3>Mug 10 cm - fleurs multicolores et turquoise</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique3.jpg" alt="Tasse en céramique " class="product-img">
+                        <span> Prix:12,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Mug 10 cm - Bleue et blanc"
+                        data-price="10,00€"
+                        data-image="../images/images produits/Ceramic/Tasse en céramique2.jpg"
+                        data-dimensions="(L) 12 X (l) 8,5 X (H) 10 cm" data-references="CER 8">
+                        <h3>Mug 10 cm - Bleue et blanc</h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique2.jpg" alt="Tasse en céramique " class="product-img">
+                        <span> Prix:10,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Coquetier - Fleurs multicolores"
+                        data-price="8,00€"
+                        data-image="../images/images produits/Ceramic/Mini porte-œufs en céramique.jpg"
+                        data-dimensions="(H) 6 X (O) 6 X (L) 4,5 cm" data-references="CER 56">
+                        <h3>Coquetier - Fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Mini porte-œufs en céramique.jpg" alt="Coquetier" class="product-img">
+                        <span> Prix:8,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name=" Pot à lait - Fleurs multicolores"
+                        data-price="12,00€"
+                        data-image="../images/images produits/Ceramic/Pot à lait et à crème en céramique.jpg"
+                        data-dimensions="(L) 12 x (l) 7,5 x (P) 9,8 x (H) 11 cm" data-references="CER 55">
+                        <h3> Pot à lait - Fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Pot à lait et à crème en céramique.jpg" alt=" Pot à lait - Fleurs multicolores" class="product-img">
+                        <span> Prix:12,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Bougeoir - Fleurs multicolores"
+                        data-price="1,76€"
+                        data-image="../images/images produits/Ceramic/Bougeoir en céramique avec poignée, années 1920.jpg"
+                        data-dimensions="(Di) 9,5 x (L) 5 x (O) 2 x (H) 6 cm" data-references="CER 54">
+                        <h3>Bougeoir - Fleurs multicolores</h3>
+                        <img src="../images/images produits/Ceramic/Bougeoir en céramique avec poignée, années 1920.jpg" alt="Bougeoir - Fleurs multicolores" class="product-img">
+                        <span> Prix:8,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                </div>
+                <button id="button_produit" class="button_produit">
+    <span class="btn-text">Voir plus</span>
+</button>           
+
+            </section>
+        </div>
+        <div class="btn-up" style="display: none;">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+            ></path>
+        </svg>
+        </div>
+        <button type="button" class="button_catalogues">
+            <span class="button__texte">Catalogue</span>
+            <span class="button__icone">
+            <svg width="25px" height="25px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
+                <path fill="#000000" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
+            </svg>
+            </span>
+        </button>
+    </main>
+     <footer>
+        <div id="footer_container">
+            <div id="footer_logo">
+                <img src="../images/logos/logo-ccfd.png" alt="" class="logo_footer"><br>
+                <img src="../images/logos/logo-sqap.png" alt="" id="logo_sgap">
+            </div>
+            <div id="footer_text">
+                <p>En collaboration avec <a href="https://ccfd-terresolidaire.org/"><strong>CCFD-Terre Solidaire</strong></a> et <a href="https://sgap38.org/"><strong>sgap38</strong></a></p>
+                <p>Vente de produits artisanaux palestiniens</p>
+                <p>Contact : <a href="mailto:ccfdts44.artisanatpalestine@gmail.com">ccfdts44.artisanatpalestine@gmail.com</a></p>
+            </div>
+            <div id="footer_menu">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="artisant.html">Les artisans</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+    <script >
+        document.getElementsByClassName('button_catalogues')[0].addEventListener('click', function(){
+        window.location.href = "catalogue.html";
+        });
+    </script>
+   <script src="../js/fiche_produit.js"></script>
+    <script src="../js/btn_voir_plus.js"></script>
+    <script src="../js/btn_up.js"></script>
+</html>

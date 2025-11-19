@@ -1,0 +1,86 @@
+/* ========================================
+   BOUTON DE RETOUR
+   Style du bouton utilisé pour revenir à la page précédente
+   ======================================== */
+.button {
+  /* Dimensions */
+  width: 150px;
+  height: 40px;
+  
+  /* Positionnement */
+  position: relative;
+  margin-top: 5%;          /* Espacement par rapport au haut */
+  margin-left: 85%;        /* Placement à droite de la page */
+  
+  /* Apparence */
+  border: 1px solid #ff4400;     /* Bordure orange */
+  background-color: #ffffff;     /* Fond blanc */
+  border-radius: 5px;            /* Coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Ombre portée */
+  
+  /* Comportement */
+  cursor: pointer;               /* Curseur main au survol */
+  overflow: hidden;              /* Cache les débordements */
+  
+  /* Disposition du contenu */
+  display: flex;
+  align-items: center;           /* Centrage vertical */
+}
+
+/* Animation des éléments du bouton */
+.button, .button__icon, .button__text {
+  transition: all 0.3s;          /* Transition douce */
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #ff4400;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #fc5214;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #fc5214;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #fc5214;
+}
+
+.button:active {
+  border: 1px solid #fc5214;
+}
+
+
+@media (max-width: 1150px) {
+  .button {
+  
+    right: 90px;
+    bottom: 20px;
+   
+  }
+}

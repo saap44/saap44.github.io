@@ -1,0 +1,94 @@
+/* ========================================
+   NAVIGATION PRINCIPALE
+   ======================================== */
+nav {
+  width: 100%;              /* Prend toute la largeur */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: white; /* Pour assurer un fond uniforme */
+}
+
+/* ========================================
+   CONTENEUR DES LIENS
+   ======================================== */
+.links {
+  width: 100%; /* Prend toute la largeur disponible */
+  display: flex;
+  justify-content: space-around; /* Répartit les liens sur toute la largeur */
+  padding: 1rem;
+  max-width: 1200px; /* Limite la largeur maximale pour les très grands écrans */
+  margin: 0 auto; /* Centre le contenu */
+  padding-left: 5%; /* Ajoute un peu d'espace à gauche */
+  
+}
+
+/* Style des liens de navigation */
+.links > a {
+  position: relative;      /* Pour les effets de survol */
+  text-decoration: none;   /* Supprime le soulignement */
+  color: #000;
+  padding: 0 10px;
+  font-family: 'EB Garamond', serif;
+  transition: color 0.3s ease;
+  font-weight: 600; /* Met le texte en gras */
+}
+
+/* Animation hover maintenue */
+.links > a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ff4400;
+  transition: width 0.3s ease-in-out;
+}
+
+.links > a:hover {
+  color: #ff4400;
+}
+
+.links > a:hover::after {
+  width: 100%;
+}
+
+
+/* Styles pour le positionnement du logo */
+#logo2 {
+  position: relative; /* Pour permettre le positionnement absolu du logo */
+}
+
+#logo {
+  position: absolute;
+  top: 5px;           /* Position légèrement plus haute */
+  left: 5px;          /* Position légèrement plus à gauche */
+  width: 15%;        /* Largeur réduite */
+  height: 15%;       /* Hauteur réduite */
+  z-index: 10;        /* S'assure que le logo est au-dessus de l'image de fond */
+}
+#logo img {
+  width: 100%;        /* Remplit la largeur du conteneur */
+  height: auto;       /* Garde les proportions de l'image */
+  object-fit: cover;  /* Assure que l'image couvre le conteneur sans déformation */
+}
+
+@media (max-width: 1150px) {
+  /* Reset des styles de base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .links > a {
+  margin: 0 10px;         /* Espacement horizontal */
+  position: relative;      /* Pour les effets de survol */
+  text-decoration: none;   /* Supprime le soulignement */
+  font-size: 12px;        /* Taille de police */
+  color: #ff4400;
+  padding: 10px 0;
+}
+
+
+}

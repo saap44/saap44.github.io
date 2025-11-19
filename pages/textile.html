@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css_par_section/typography.css">
+    <link rel="stylesheet" href="../css/style_catalogue.css">
+    <link rel="stylesheet" href="../css/css_par_section/footer.css">
+    <link rel="stylesheet" href="../css/css_par_section/menu_burger.css">
+    <link rel="stylesheet" href="../css/css_par_section/ficher_produit.css">
+    <link rel="stylesheet" href="../css/css_par_section/catalogues_card.css">
+    <link rel="stylesheet" href="../css_btn_voir_plus.css">
+    <link rel="stylesheet" href="../css/css_par_section/css_btn_up.css">
+    <link rel="stylesheet" href="../css/css_par_section/css.btn_retour_catalogue.css">
+    <link rel="icon" href="../images/logos/2.png" type="image/png">
+    <title>Textile</title>
+</head>
+<body>
+      <header>
+            <h1 id="apropos">Broderies</h1>
+            <div id="logo2">
+                <img src="../images/image_categories/image-textile.jpeg" alt="">
+            </div>
+             <nav>
+                <div class="links" style="--items: 4">
+                    <a href="../index.html">Accueil</a>
+                    <a href="apropos.html">À propos</a>
+                    <a href="les_artisans.html">Les artisans</a>
+                    <a href="contact.html">Contact</a>
+                    <div class="line"></div>
+                </div>
+            </nav>
+    </header>   
+    <main>
+        <div class="btn-up" style="display: none;">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+            ></path>
+        </svg>
+        </div>
+        <div id="main_container">
+            <aside>
+                        <div>
+                <h2>les categories</h2>
+                <ul>
+                    <li><a href="Bois-d'olivier.html" id=as-ul-li-a-bois-d-olivier>Bois d'olivier</a></li>
+                    <li><a href="céramique.html" id=as-ul-li-a-ceramic>Céramique</a></li>
+                    <li><a href="verre-soufflé.html" id=as-ul-li-a-boules-de-noel>Verre soufflé</a></li>
+                    <li><a href="textile.html" id=as-ul-li-a-textil>Broderies</a></li>
+                </ul>
+            </div>
+            </aside>
+            <section id="productSection">
+                <h1>Nos produits en Textile</h1>
+                <div id="productContainer">
+                    <div id="productPopup" class="popup">
+                        <div class="popup-content">
+                            <span class="close-btn">&times;</span>
+                            <h2 id="popupTitle">Nom du produit</h2>
+                            <img id="popupImage" src="" alt="Produit" class="product-img">
+                            <p><strong>Prix :</strong> <span id="popupPrice"></span></p>
+                            <p><strong>Description :</strong> <span id="popupDescription"></span></p>
+                            <p><strong>Dimensions :</strong> <span id="popupDimensions"></span></p>
+                            <p><strong>Référence :</strong> <span id="popupReferences"></span></p> 
+                        </div>
+                    </div>
+
+                    <div class="product-card"
+                        data-name="Porte-monnaie"
+                        data-price="15,00€"
+                        data-image="../images/images produits/Textile/Porte-monnaie damassé.png" data-dimensions="11x7 cm" data-references="BRO 5">
+                        <h3>Porte-monnaie </h3>
+                        <img src="../images/images produits/Textile/Porte-monnaie damassé.png" alt="Porte-monnaie damassé" class="product-img">
+                        <span> Prix : 15,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Trousse"
+                        data-price="28,00€"
+                        data-image="../images/images produits/Textile/Trousse Crayons.png" data-dimensions="20X7 cm" data-references="BRO 8">
+                        <h3>Trousse</h3>
+                        <img src="../images/images produits/Textile/Trousse Crayons.png" alt="Trousse " class="product-img">
+                        <span> Prix : 28,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Etui cartes "
+                        data-price="20,00€"
+                        data-image="../images/images produits/Textile/Etui cartes.png" data-dimensions="11X8 cm" data-references="BRO 9">
+                        <h3>Etui cartes </h3>
+                        <img src="../images/images produits/Textile/Etui cartes.png" alt="Etui cartes" class="product-img">
+                        <span> Prix : 20,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Porte bouteilles"
+                        data-price="28,00€"
+                        data-image="../images/images produits/Textile/Porte bouteilles.png" data-dimensions="20X7 cm" data-references="BRO 13">
+                        <h3>Porte bouteilles</h3>
+                        <img src="../images/images produits/Textile/Porte bouteilles.png" alt="Porte bouteilles" class="product-img">
+                        <span> Prix : 28,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Coussin à épingles "
+                        data-price="8,00€"
+                        data-image="../images/images produits/Textile/Coussin à épingles.png" data-references="BRO 14">
+                        <h3>Coussin à épingles</h3>
+                        <img src="../images/images produits/Textile/Coussin à épingles.png" alt="Coussin à épingles" class="product-img">
+                        <span> Prix : 8,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Déco murale "
+                        data-price="50,00€"
+                        data-image="../images/images produits/Textile/Murale Bethléem.png"
+                        data-dimensions="30X25 cm" data-references="BRO 15">
+                        <h3>Déco murale</h3>
+                        <img src="../images/images produits/Textile/Murale Bethléem.png" alt="Murale Bethléem" class="product-img">
+                        <span> Prix : 50,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Pochette "
+                        data-price="20,00€"
+                        data-image="../images/images produits/Textile/Pochette.png"
+                        data-dimensions="20X12 cm" data-references="BRO 2">
+                        <h3>Pochette</h3>
+                        <img src="../images/images produits/Textile/Pochette.png" alt="Pochette" class="product-img">
+                        <span> Prix : 20,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Pochette "
+                        data-price="25,00€"
+                        data-image="../images/images produits/Textile/Pochette2.png"
+                        data-dimensions="18X12 cm" data-references="BRO 3">
+                        <h3>Pochette</h3>
+                        <img src="../images/images produits/Textile/Pochette2.png" alt="Pochette" class="product-img">
+                        <span> Prix : 25,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Porte monnaie doublé poche"
+                        data-price="25,00€"
+                        data-image="../images/images produits/Textile/Porte monnaie doublé poche.png" data-references="BRO 4">
+                        <h3>Porte monnaie doublé poche</h3>
+                        <img src="../images/images produits/Textile/Porte monnaie doublé poche.png" alt="Porte monnaie doublé poche" class="product-img">
+                        <span> Prix : 25,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Poche à documents"
+                        data-price="30,00€"
+                        data-image="../images\images produits\Textile\Poche à documents.png"
+                        data-dimensions="20X15 cm" data-references="BRO 7">
+                        <h3>Petit sac</h3>
+                        <img src="../images\images produits\Textile\Poche à documents.png" alt="Poche à documents" class="product-img">
+                        <span> Prix : 30,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Petit sac"
+                        data-price="25,00€"
+                        data-image="../images/images produits/Textile/Petit sac.png"
+                        data-dimensions="21X16 cm" data-references="BRO 6">
+                        <h3>Petit sac</h3>
+                        <img src="../images/images produits/Textile/Petit sac.png" alt="Petit sac" class="product-img">
+                        <span> Prix : 25,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Petit sac "
+                        data-price="30,00€"
+                        data-image="../images/images produits/Textile/Petite sacoche.png"
+                        data-dimensions="20X23 cm" data-references="BRO 10">
+                        <h3>Petit sac </h3>
+                        <img src="../images/images produits/Textile/Petite sacoche.png" alt="Petit sac " class="product-img">
+                        <span> Prix : 30,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Sac demi lune"
+                        data-price="40,00€"
+                        data-image="../images/images produits/Textile/Sac demi lune.png"
+                        data-dimensions="28X22 cm" data-references="BRO 11">
+                        <h3>Sac demi lune</h3>
+                        <img src="../images/images produits/Textile/Sac demi lune.png" alt="Sac demi lune" class="product-img">
+                        <span> Prix : 40,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Sac"
+                        data-price="40,00€"
+                        data-image="../images/images produits/Textile/SacavecBroderie.png"
+                        data-dimensions="35X25 cm" data-references="BRO 12">
+                        <h3>Sac</h3>
+                        <img src="../images/images produits/Textile/SacavecBroderie.png" alt="Sac" class="product-img">
+                        <span> Prix: 40,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span> 
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+         <button type="button" class="button_catalogues">
+            <span class="button__texte">Catalogue</span>
+            <span class="button__icone">
+            <svg width="25px" height="25px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
+                <path fill="#000000" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
+            </svg>
+            </span>
+        </button>
+    </main>
+     <footer>
+        <div id="footer_container">
+            <div id="footer_logo">
+                <img src="../images\logos\logo-ccfd.png" alt="" class="logo_footer"><br>
+                <img src="../images\logos\logo-sqap.png" alt="" id="logo_sgap">
+            </div>
+            <div id="footer_text">
+                <p>En collaboration avec <a href="https://ccfd-terresolidaire.org/"><strong>CCFD-Terre Solidaire</strong></a> et <a href="https://sgap38.org/"><strong>sgap38</strong></a></p>
+                <p>Vente de produits artisanaux palestiniens</p>
+                <p>Contact : <a href="mailto:ccfdts44.artisanatpalestine@gmail.com">ccfdts44.artisanatpalestine@gmail.com</a></p>
+            </div>
+            <div id="footer_menu">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="artisant.html">Les artisans</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+    <script >
+        document.getElementsByClassName('button_catalogues')[0].addEventListener('click', function(){
+        window.location.href = "catalogue.html";
+        });
+    </script>
+    <script src="../js/fiche_produit.js"></script>
+    <script src="../js/btn_up.js"></script>
+</html>

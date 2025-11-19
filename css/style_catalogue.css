@@ -1,0 +1,195 @@
+/* ========================================
+   STYLES GÉNÉRAUX
+   ======================================== */
+*{
+    margin: 0;             /* Supprime les marges par défaut */
+    padding: 0;            /* Supprime les paddings par défaut */
+    box-sizing: border-box; /* Inclut padding et bordure dans la largeur totale */
+    /* La police est définie dans typography.css */
+    list-style: none;      /* Supprime les puces des listes */
+}
+
+/* Prévention du débordement horizontal */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   HEADER ET LOGO
+   ======================================== */
+#logo2 {
+  width: 100%;            /* Prend toute la largeur de l'écran */
+  height: 250px;          /* Hauteur fixe */
+  overflow: hidden;       /* Cache les débordements */
+  display: flex;          /* Centre l'image */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optimisation de l'image du logo */
+#logo2 img {
+  width: 100%;            /* Remplir la largeur */
+  height: 100%;           /* Remplir la hauteur */
+  object-fit: cover;      /* Remplissage sans déformation */
+  /* Optimisation de la netteté */
+  image-rendering: auto;             
+  image-rendering: crisp-edges;      
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: high-quality;/* Peut améliorer le rendu dans certains navigateurs */ 
+  display: block;
+  filter: contrast(110%) brightness(105%) saturate(120%);
+}
+
+/* Style du titre principal */
+header {
+    position: relative;  /* Pour contenir le h1 absolu */
+}
+
+#apropos {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 3.5%;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff4400;
+    z-index: 2; /* Ajout uniquement du z-index pour le rendre visible */
+}
+
+/* Style pour le h1 de la section produits */
+#productSection h1 {
+    font-size: 2.5rem;
+    color: #ff4400;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+/* ========================================
+   CONTENEUR PRINCIPAL
+   ======================================== */
+#main_container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+/* ========================================
+   BARRE LATÉRALE
+   ======================================== */
+aside {
+  width: 25%;
+  height: auto;
+  padding: 30px;
+  margin: 5% 0 0 0;
+  border-right: 1px solid #ff4400;
+}
+
+/* Styles des titres de la barre latérale */
+aside h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #ff4400;
+}
+
+/* Styles des liens de la barre latérale */
+aside a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  display: block;
+  margin: 15px 0;
+  font-weight: bolder;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Animation de soulignement au survol */
+aside a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #ff4400;
+  transition: width 0.5s ease;
+}
+
+aside a:hover::after {
+  width: 100%;
+}
+
+/* ========================================
+   EN-TÊTE DE SECTION
+   ======================================== */
+#header_container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: large;
+}
+
+#header_container h2 {
+  font-size: 3rem;
+  color: #ff4400;
+  margin-bottom: 10px;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 1150px) {
+  /* Reset des styles de base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Adaptation du conteneur principal */
+  #main_container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #productContainer{
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Adaptation de la barre latérale */
+  aside {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border-right: none;
+    border-bottom: 1px solid #ff4400;
+    border-top: 1px solid #ff4400;
+  }
+
+  /* Réduction de la taille des textes */
+  aside h2 {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  aside a {
+    font-size: 12px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: bolder;
+  }
+
+  /* Réorganisation du menu latéral en ligne */
+  aside ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

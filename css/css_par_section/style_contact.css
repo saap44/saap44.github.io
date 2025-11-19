@@ -1,0 +1,149 @@
+/* ========================================
+   CONTENEUR PRINCIPAL DU FORMULAIRE
+   ======================================== */
+.contact-container {
+  min-height: 100vh;           /* Hauteur minimale sur toute la hauteur de l'écran */
+  background-color: #f9f9f9;   /* Fond légèrement gris */
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ========================================
+   CONTENEUR DU FORMULAIRE
+   ======================================== */
+.form-container {
+  max-width: 700px;            /* Limite la largeur maximale */
+  margin: 0 auto;              /* Centre horizontalement */
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;         /* Coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée subtile */
+}
+
+/* ========================================
+   EN-TÊTE DU FORMULAIRE
+   ======================================== */
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-header h1 {
+  color: #ff4400;             /* Couleur principale */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* ========================================
+   CONTENU DU FORMULAIRE
+   ======================================== */
+.form-content {
+  margin: 2rem 0;
+}
+
+/* Groupe de champs (ex: prénom + nom) */
+.input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-field {
+  flex: 1;
+}
+
+/* Style des labels */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Style des champs de saisie */
+input, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+/* État focus des champs */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #ff4400;
+  box-shadow: 0 0 0 2px rgba(255, 68, 0, 0.1);
+}
+
+/* Style spécifique pour la zone de texte */
+textarea {
+  resize: vertical;          /* Permet le redimensionnement vertical uniquement */
+  min-height: 120px;
+}
+
+/* ========================================
+   BOUTON D'ENVOI
+   ======================================== */
+.submit-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #ff4400;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #e63d00;  /* Plus foncé au survol */
+}
+
+/* ========================================
+   MESSAGES DE RETOUR
+   ======================================== */
+#result {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.text-success {
+  color: #22c55e;           /* Vert pour le succès */
+}
+
+.text-error {
+  color: #ef4444;           /* Rouge pour l'erreur */
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+  /* Adaptation pour les petits écrans */
+  .input-group {
+    flex-direction: column;  /* Empile les champs */
+    gap: 1rem;
+  }
+  
+  .form-container {
+    padding: 1rem;
+  }
+  
+  .form-header h1 {
+    font-size: 2rem;
+  }
+  
+  /* Réduction de la taille des champs */
+  input, textarea {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+}

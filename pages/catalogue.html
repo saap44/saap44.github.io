@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css_par_section/typography.css">
+    <link rel="stylesheet" href="../css/style_catalogue.css">
+    <link rel="stylesheet" href="../css/css_par_section/footer.css">
+    <link rel="stylesheet" href="../css/css_par_section/menu_burger.css">
+    <link rel="stylesheet" href="../css/css_par_section/ficher_produit.css">
+    <link rel="stylesheet" href="../css/css_par_section/catalogues_card.css">
+    <link rel="stylesheet" href="../css/css_par_section/css_btn_up.css">
+    <link rel="icon" href="../images/logos/2.png" type="image/png">
+
+    <title>Le catalogue</title>
+</head>
+<body>
+      <header>
+            <h1 id="apropos">Le catalogue</h1>
+            <div id="logo2">
+                <img src="../images/images-pages-principales/pexels-aleyna-demir-655137387-24376399.png" alt="">
+            </div>
+             <nav>
+                <div class="links">
+                    <a href="../index.html">Accueil</a>
+                    <a href="catalogue.html">Catalogue</a>
+                    <a href="les_artisans.html">Les Artisans</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+    </header>   
+    <main>
+        <div class="btn-up" style="display: none;">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+            ></path>
+        </svg>
+        </div>
+        <div id="main_container">
+            <aside>
+                        <div>
+                <h2>Les catégories</h2>
+                <ul>
+                    <li><a href="Bois-d'olivier.html" id=as-ul-li-a-bois-d-olivier>Bois d'olivier</a></li>
+                    <li><a href="céramique.html" id=as-ul-li-a-ceramic>Céramique</a></li>
+                    <li><a href="verre-soufflé.html" id=as-ul-li-a-boules-de-noel>Verre soufflé</a></li>
+                    <li><a href="textile.html" id=as-ul-li-a-textil>Broderies</a></li>
+                </ul>
+            </div>
+            </aside>
+            <section id="productSection">
+                <h1>Une selection de nos produits </h1>
+                <div id="productContainer">
+                    <div id="productPopup" class="popup">
+                        <div class="popup-content">
+                            <span class="close-btn">&times;</span>
+                            <h2 id="popupTitle">Nom du produit</h2>
+                            <img id="popupImage" src="" alt="Produit" class="product-img">
+                            <p><strong>Prix :</strong> <span id="popupPrice"></span></p>
+                            <p><strong>Dimentions :</strong> <span id="popupDimensions"></span></p>
+                            <!-- ajouté data-references pas oublier les autres -->
+                            <p><strong>Référence :</strong> <span id="popupReferences"></span></p> 
+                        </div>
+                    </div>
+                    <div class="product-card"
+                        data-name="Crèche - Crèche et grotte"
+                        data-price="35,00€"
+                        data-references="CRE 7" 
+                        data-image="../images/images produits/Bois d'olivier/Olive Wood Curved Nativity Holy Family.jpg" data-dimensions="12,5 × 10,5 cm">
+                        <h3>Crèche - Crèche et grotte</h3>
+                        <img src="../images/images produits/Bois d'olivier/Olive Wood Curved Nativity Holy Family.jpg" alt="Crèche de Noël courbée en bois d'olivier Sainte Famille" class="product-img">
+                        <span> Prix: 35,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card hidden  plusProduits"
+                        data-name="Mug 10 cm- Bleu et blanc "
+                        data-price="$10,00"
+                        data-references="CER 8" 
+                        data-image="../images/images produits/Ceramic/Tasse en céramique2.jpg"
+                        data-dimensions="10 cm"
+                        >
+                        <h3>Mug 10 cm- Bleu et blanc </h3>
+                        <img src="../images/images produits/Ceramic/Tasse en céramique2.jpg" alt="Mug 10 cm- Bleu et blanc " class="product-img">
+                        <span> Prix: 10,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                               
+                    <div class="product-card"
+                        data-name="Etui cartes "
+                        data-price="20,00€"
+                        data-references="BRO 9"
+                        data-image="../images/images produits/Textile/Etui cartes.png" data-dimensions="11X8 cm">
+                        <h3>Etui cartes </h3>
+                        <img src="../images/images produits/Textile/Etui cartes.png" alt="Etui cartes" class="product-img">
+                        <span> Prix: 20,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="boule sapin-bleue étoiles"
+                        data-price="10,00€"
+                        data-references="VER 9"
+                        data-image="../images/images produits/verre soufflée/Boule de Noël en verre.jpg" data-dimensions="(P) 6,5 x (H) 8,5 cm">
+                        <h3>boule sapin-bleue étoiles</h3>
+                        <img src="../images/images produits/verre soufflée/Boule de Noël en verre.jpg" alt="boule sapin-bleue étoiles" class="product-img">
+                        <span> Prix: 10,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Sac avec Broderie et tissu damassé"
+                        data-price="40,00€"
+                        data-references="BRO 12"
+                        data-image="../images/images produits/Textile/SacavecBroderie.png"
+                        data-dimensions="35X25 cm">
+                        <h3>Sac</h3>
+                        <img src="../images/images produits/Textile/SacavecBroderie.png" alt="Sac avec Broderie et tissu damassé" class="product-img">
+                        <span> Prix: 40,00€</span>
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">Voir plus</span> 
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                    <div class="product-card"
+                        data-name="Plat rond creux"
+                        data-price="45,00€"
+                        data-references="CER 28"
+                        data-image="../images/images produits/Ceramic/Plat rond en céramique 2.jpg"
+                        data-dimensions="(P) 35 x (H)6,5x(L) 25 cm">
+                        <h3>Plat rond creux</h3>
+                        <img src="../images/images produits/Ceramic/Plat rond en céramique 2.jpg" alt="Plat rond creux" class="product-img">
+                        <span> Prix:45,00€</span> 
+                        <button type="button" class="button openPopupBtn" id="button">
+                        <span class="button__text">voir plus</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+     <footer>
+        <div id="footer_container">
+            <div id="footer_logo">
+                <img src="../images/logos/logo-ccfd.png" alt="Logo CCFD" class="logo_footer"><br>
+                <img src="../images/logos/logo-sqap.png" alt="Logo SGAP" id="logo_sgap">
+            </div>
+            <div id="footer_text">
+                <p>En collaboration avec <a href="https://ccfd-terresolidaire.org/"><strong>CCFD-Terre Solidaire</strong></a> et <a href="https://sgap38.org/"><strong>sgap38</strong></a></p>
+                <p>Vente de produits artisanaux palestiniens</p>
+                <p>Contact : <a href="mailto:ccfdts44.artisanatpalestine@gmail.com">ccfdts44.artisanatpalestine@gmail.com</a></p>
+            </div>
+            <div id="footer_menu">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="artisant.html">Les artisans</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+    <script src="../js/fiche_produit.js"></script>
+    <script src="../js/btn_up.js"></script>
+</html>

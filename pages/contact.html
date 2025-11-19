@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Artisanat Palestine</title>
+    <link rel="stylesheet" href="../css/css_par_section/typography.css">
+    <link rel="stylesheet" href="../css/style_catalogue.css">
+    <link rel="stylesheet" href="../css/css_par_section/footer.css">
+    <link rel="stylesheet" href="../css/css_par_section/menu_burger.css">
+    <link rel="stylesheet" href="../css/css_par_section/ficher_produit.css">
+    <link rel="stylesheet" href="../css/css_par_section/catalogues_card.css">
+    <link rel="stylesheet" href="../css/css_par_section/css_btn_up.css">
+    <link rel="stylesheet" href="../css/css_par_section/style_contact.css">
+    <link rel="icon" href="../images/logos/2.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div id="logo2">
+            <img src="../images/images-pages-principales/pexels-aleyna-demir-655137387-24376399.png" alt="Image contact">
+        </div>
+        <nav>
+            <div class="links" style="--items: 4">
+                <a href="../index.html">Accueil</a>
+                <a href="catalogue.html">Le catalogue</a>
+                <a href="les_artisans.html">Les artisans</a>
+                <a href="apropos.html">À propos</a>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Contactez-nous</h1>
+                <p>Remplissez le formulaire ci-dessous pour nous envoyer un message</p>
+            </div>
+            <div class="form-content">
+                <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                    <input type="hidden" name="access_key" value="ea091189-e165-4a96-af80-99fb728adf57" />
+                    <input type="hidden" name="subject" value="Nouveau message depuis le formulaire de contact" />
+                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="fname">Prénom</label>
+                            <input type="text" name="name" id="first_name" placeholder="Jean" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="lname">Nom</label>
+                            <input type="text" name="last_name" id="lname" placeholder="Dupont" required />
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="email">Adresse Email</label>
+                            <input type="email" name="email" id="email" placeholder="vous@example.com" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="phone">Numéro de Téléphone</label>
+                            <input type="tel" name="phone" id="phone" placeholder="06 12 34 56 78" />
+                        </div>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="message">Votre Message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="Écrivez votre message ici..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Envoyer le message
+                    </button>
+                    <p id="result"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_container">
+            <div id="footer_logo">
+                <img src="../images/logos/logo-ccfd.png" alt="Logo CCFD" class="logo_footer">
+                <img src="../images/logos/logo-sqap.png" alt="Logo SGAP" id="logo_sgap">
+            </div>
+            <div id="footer_text">
+                <p>En collaboration avec <a href="https://ccfd-terresolidaire.org/"><strong>CCFD-Terre Solidaire</strong></a> et <a href="https://sgap38.org/"><strong>sgap38</strong></a></p>
+                <p>Vente de produits artisanaux palestiniens</p>
+                <p>Contact : <a href="mailto:ccfdts44.artisanatpalestine@gmail.com">ccfdts44.artisanatpalestine@gmail.com</a></p>
+            </div>
+            <div id="footer_menu">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="artisant.html">Les artisans</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/javascript_menu_burger.js"></script>
+    <script>
+        const form = document.getElementById("form");
+        const result = document.getElementById("result");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            result.textContent = "Veuillez patienter...";
+
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                },
+                body: json
+            })
+            .then(async (response) => {
+                const json = await response.json();
+                if (response.status == 200) {
+                    result.textContent = "Message envoyé avec succès !";
+                    result.classList.add("text-success");
+                } else {
+                    result.textContent = json.message || "Une erreur s'est produite";
+                    result.classList.add("text-error");
+                }
+            })
+            .catch((error) => {
+                result.textContent = "Une erreur s'est produite !";
+                result.classList.add("text-error");
+            })
+            .finally(() => {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 5000);
+            });
+        });
+    </script>
+</body>
+</html>

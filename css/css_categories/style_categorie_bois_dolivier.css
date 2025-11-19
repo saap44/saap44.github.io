@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;  
+    list-style: none;
+
+}
+
+#logo2 {
+  width: 100%;            /* Prend toute la largeur de l'écran */
+  height: 250px;          /* Hauteur fixe */
+  overflow: hidden;       /* Cache les débordements */
+  display: flex;          /* Centre l'image */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image du logo */
+#logo2 img {
+  width: 100%;            /* Remplir la largeur */
+  height: 100%;           /* Remplir la hauteur */
+  object-fit: cover;      /* Remplissage sans déformation */
+
+  /* Optimisation de la netteté */
+  image-rendering: auto;             /* Par défaut : mieux pour les photos */
+  image-rendering: crisp-edges;      /* Parfois utile pour les dessins */
+  image-rendering: -webkit-optimize-contrast;  /* Optimisation spécifique WebKit */
+  display: block;
+}
+#apropos{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 3.5%;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff4400;
+}
+
+
+
+#main_container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+
+}
+
+aside {
+  width: 25%;
+  height: auto;
+  padding: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 5%;
+  /* background-color: #f9d8c8; */
+  border-right: 1px solid #ff4400;
+  
+}
+aside h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #ff4400;
+}
+
+aside a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  display: block;
+  margin: 15px 0;
+  font-weight: bolder;
+}
+
+aside a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 15px 0;
+  font-weight: bolder;
+}
+
+
+/* style pour h1, h2, h3 */
+#header_container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: large;
+  
+}
+
+#header_container h2 {
+  font-size: 3rem;
+  color: #ff4400;
+  margin-bottom: 10px;
+}
+
