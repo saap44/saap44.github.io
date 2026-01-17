@@ -46,11 +46,11 @@ nav {
   transition: width 0.3s ease-in-out;
 }
 
-.links > a:hover {
+.links > a:hover, .links > a.current-page {
   color: #ff4400;
 }
 
-.links > a:hover::after {
+.links > a:hover::after, .links > a.current-page::after {
   width: 100%;
 }
 
